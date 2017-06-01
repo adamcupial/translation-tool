@@ -1,0 +1,29 @@
+nav-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 50px;
+    background-color: #000;
+    position: sticky;
+    padding: 0 20px;
+}
+
+nav-link {
+    color: #eee;
+    padding: 0 0 0 10px;
+    cursor: pointer;
+    transition: text-shadow .31s ease-in-out,
+                color .31s ease-in-out;
+}
+
+nav-link:hover,
+nav-link[active] {
+    text-shadow: 0 0 10px #fff;
+    color: #fff;
+}
+
+nav-link:not(:last-child)::after {
+    content: '';
+    padding-left: 10px;
+    border-right: 1px solid #fff;
+}
