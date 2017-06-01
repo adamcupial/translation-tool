@@ -1,0 +1,2 @@
+graft translation_tool/templates
+graft translation_tool/static
